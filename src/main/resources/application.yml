@@ -1,0 +1,18 @@
+spring:
+  cache:
+    multi:
+      caffeine:
+        expireAfterAccess: 60000
+      redis:
+        defaultExpiration: 60000
+
+
+server:
+  port: 8081
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 1000
+    cache: redis
